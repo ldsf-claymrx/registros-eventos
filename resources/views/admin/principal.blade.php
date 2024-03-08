@@ -9,17 +9,13 @@
     <div class="container-fluid">
 
         <!-- Page Heading -->
-        <h1 class="h3 mb-2 text-gray-800">Bienvenido a REVEN&reg;</h1>
+        <h1 class="h3 mb-2 text-gray-800">Bienvenido a HALY&reg;</h1>
         <p class="mb-4" style="text-align: justify;">
-            REVEN &reg; es un sistema administrador, que tiene el objetivo agilizar procesos de registro 
-            para nuevos creyentes, eventos (congresos, desayunos, RAF's etc.), reportes de personas asistentes 
-            a un evento, reporte de identificación de creyentes para visitas, escuela ministerial. 
-            Todo esto es un sistema centralizado, para consultas, edición e inserción de datos.
-        </p>
-
-        <p class="mb-4" style="text-align: justify;">
-            Si deseas conocer más información acerca de la Iglesia, aqui te dejamos su 
-            <a target="_blank" href="https://casadegloria.com">Pagina Oficial Casa de Gloria&reg;</a>.
+            Haly&reg; es un sistema, que tiene el objetivo agilizar procesos de registro 
+            para nuevos creyentes, eventos (congresos, desayunos, RAF's, conferencias, etc.), reportes de personas asistentes 
+            a un evento, reporte de identificación de creyentes para visitas, asistencias para escuela ministerial, entre otras
+            muchas funciones más. Todo en este sistema centralizado llamado Haly&reg;. Aquí podras consultar, agregar, editar y
+            eliminar difentes tipos de datos.
         </p>
 
         <!-- Content Row -->

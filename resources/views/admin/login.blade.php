@@ -1,7 +1,7 @@
 @extends('master')
 
 @section('metas-and-title')
-    <meta name="description" content="Inicio de Sesion, Administrador para Registros de Eventos de la Iglesia Casa de Gloria">
+    <meta name="description" content="">
     <meta name="author" content="Ing. Lucio David ClayMRX">
     <title>Administrador - Inicio Sesión</title>
 @endsection
@@ -33,7 +33,7 @@
                                             <div class="form-group">
                                                 <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Ingrese la contraseña">
                                             </div>
-                                            <a href="" class="btn btn-primary btn-user btn-block">Entrar</a>
+                                            <a href="{{ url('/principal') }}" class="btn btn-primary btn-user btn-block">Entrar</a>
                                         </form>
                                     </div>
                                 </div>

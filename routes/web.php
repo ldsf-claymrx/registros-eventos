@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\UsersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +19,8 @@ Route::get('/', function () {
     return view('admin.login');
 });
 
-Route::get('/dashboard', [DashboardController::class, 'index']);
+Route::get('/principal', [DashboardController::class, 'index']);
+Route::get('/crearusuario', [UsersController::class, 'create']);
 
 
+Route::post('/saveuser', [UsersController::class, 'store']);

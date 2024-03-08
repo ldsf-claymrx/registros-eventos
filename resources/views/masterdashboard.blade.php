@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="Viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta name="description" content="Panel de control de Registro Eventos - Iglesia Casa de Gloria">
+    <meta name="description" content="HALY es un software dedicado para las Iglesias Cristianas, en donde podran controlar eventos, congresos, RAF, etc.">
     <meta name="author" content="Ing. Lucio David ClayMRX">
 
     @yield('title')
@@ -29,19 +29,19 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ url('dashboard') }}">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ url('principal') }}">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-sitemap"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">REVEN&reg;</div>
+                <div class="sidebar-brand-text mx-3">HALY&reg;</div>
             </a>
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="{{ url('dashboard') }}">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('principal') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Principal</span></a>
             </li>
@@ -63,7 +63,7 @@
                 <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Seleccione su opcion:</h6>
-                        <a class="collapse-item" href="">Registrar</a>
+                        <a class="collapse-item" href="{{ url('/crearusuario') }}">Registrar</a>
                         <a class="collapse-item" href="">Consultar</a>
                     </div>
                 </div>
@@ -174,7 +174,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Administrador</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
                                 <img class="img-profile rounded-circle"
                                     src="{{ asset('undraw_profile.svg') }}">
                             </a>
@@ -206,7 +206,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Casa de Gloria 2024</span>
+                        <span>Copyright &copy; Haly-SYS 2024</span>
                     </div>
                 </div>
             </footer>
@@ -259,6 +259,8 @@
     <!-- Page level custom scripts -->
     <script src="{{ asset('js/demo/chart-area-demo.js') }}"></script>
     <script src="{{ asset('js/demo/chart-pie-demo.js') }}"></script>
+
+    @yield('scripts-personales')
 
 </body>
 
