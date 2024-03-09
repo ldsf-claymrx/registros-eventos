@@ -1,8 +1,6 @@
 @extends('masterdashboard')
 
 @section('title')
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>REVEN - Crear Usuario</title>
 @endsection
 
@@ -72,7 +70,7 @@
                                         <div class="form-group">
                                             <label for="">Cargo:</label>
                                             <select name="cargo" id="cargo" class="form-control form-control-user" required>
-                                                <option value="0">Seleccione una opción</option>
+                                                <option selected="true" disabled="disabled">Seleccione una opción</option>
                                                 <option value="1">Pastorado</option>
                                                 <option value="2">Líder</option>
                                                 <option value="3">Levita</option>
@@ -85,7 +83,7 @@
                                         <div class="form-group">
                                             <label for="">Activo:</label>
                                             <select name="activo" id="activo" class="form-control form-control-user" required>
-                                                <option value="0">Seleccione una opción</option>
+                                                <option selected="true" disabled="disabled">Seleccione una opción</option>
                                                 <option value="1">Si</option>
                                                 <option value="2">No</option>
                                             </select>
@@ -95,7 +93,7 @@
                                         <div class="form-group">
                                             <label for="">Nivel:</label>
                                             <select name="nivel" id="nivel" class="form-control form-control-user" required>
-                                                <option value="0">Seleccione una opción</option>
+                                                <option selected="true" disabled="disabled">Seleccione una opción</option>
                                                 <option value="1">Administrador</option>
                                                 <option value="2">Editor</option>
                                             </select>

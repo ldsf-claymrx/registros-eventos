@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-    $('#form-crearusuario').submit(function(event){
+    $('#form-actualizarusuario').submit(function(event){
         event.preventDefault();
 
         var formData = $(this).serialize();

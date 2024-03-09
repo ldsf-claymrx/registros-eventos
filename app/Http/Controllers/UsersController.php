@@ -50,7 +50,7 @@ class UsersController extends Controller
                 ]);
             } else {
 
-                $Usuarios->nombree = $nombre;
+                $Usuarios->nombre = $nombre;
                 $Usuarios->id_cargo = $id_cargo;
                 $Usuarios->activo = $activo;
                 $Usuarios->nivel = $nivel;
@@ -64,11 +64,66 @@ class UsersController extends Controller
                 ]);
             }
         } catch (\Throwable $th) {
-            return response()->json(['responseText' => $th]);
+            return response()->json([
+                'title' => 'Error',
+                'text'  => $th,
+                'icon'  => 'error'
+            ]);
         }
     }
 
     public function show() {
-        
+        $usuarios = Usuario::all();
+        return view('admin.mostrarusuarios', compact('usuarios'));
+    }
+
+    public function update(Request $request, $id){
+        try {
+            $Usuarios = Usuario::find($id);
+
+            $nombre = $request->input('nombre');
+            $Usuarios->ape_paterno = $request->input('ape_paterno');
+            $Usuarios->ape_materno = $request->input('ape_materno');
+            $Usuarios->correo = $request->input('correo');
+            $Usuarios->contra = Hash::make($request->input('contra'));
+
+            $id_cargo = $request->input('cargo');
+            $activo = $request->input('activo');
+            $nivel = $request->input('nivel');
+
+            
+
+            if ($id_cargo == 0) {
+                return redirect()->back();
+            } else if($activo == 0) {
+                return redirect()->back();
+            } else if($nivel == 0) {
+                return redirect()->back();
+            } else {
+
+                $Usuarios->nombre = $nombre;
+                $Usuarios->id_cargo = $id_cargo;
+                $Usuarios->activo = $activo;
+                $Usuarios->nivel = $nivel;
+
+                $Usuarios->update();
+
+                return redirect()->back();
+            }
+        } catch (\Throwable $th) {
+            return redirect()->back();
+        }
+    }
+
+
+    public function destroy($id) {
+        try {
+            $Usuarios = Usuario::find($id);
+            $Usuarios->delete();
+            return redirect()->back();
+            
+        } catch (\Throwable $th) {
+            return redirect()->back();
+        }
     }
 }

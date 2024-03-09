@@ -20,7 +20,10 @@ Route::get('/', function () {
 });
 
 Route::get('/principal', [DashboardController::class, 'index']);
+
 Route::get('/crearusuario', [UsersController::class, 'create']);
-
-
 Route::post('/saveuser', [UsersController::class, 'store']);
+
+Route::get('/usuarios', [UsersController::class, 'show']);
+Route::put('/usuarios/{id}', [UsersController::class, 'update'])->name('usuarios.update');
+Route::delete('/usuarios/{id}', [UsersController::class, 'destroy'])->name('usuarios.destroy');
