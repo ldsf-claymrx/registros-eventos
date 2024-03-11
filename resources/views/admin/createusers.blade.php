@@ -114,5 +114,5 @@
 @endsection
 
 @section('scripts-personales')
-    <script src="{{ asset('js/createusers.js') }}"></script>
+    <script src="{{ asset('js/creates.js') }}"></script>
 @endsection

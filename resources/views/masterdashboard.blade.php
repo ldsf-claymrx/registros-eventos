@@ -65,7 +65,7 @@
                 <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Seleccione su opcion:</h6>
-                        <a class="collapse-item" href="{{ url('/crearusuario') }}">Registrar</a>
+                        <a class="collapse-item" href="{{ url('/crear-usuario') }}">Registrar</a>
                         <a class="collapse-item" href="{{ url('/usuarios') }}">Consultar</a>
                     </div>
                 </div>
@@ -90,8 +90,8 @@
                 <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Opciones de Iglesias:</h6>
-                        <a class="collapse-item" href="">Registrar</a>
-                        <a class="collapse-item" href="">Consultar</a>
+                        <a class="collapse-item" href="{{ url('/registrar-iglesia') }}">Registrar</a>
+                        <a class="collapse-item" href="{{ url('/iglesias') }}">Consultar</a>
                     </div>
                 </div>
             </li>
@@ -105,8 +105,8 @@
                 <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Cargos o Funciones:</h6>
-                        <a class="collapse-item" href="">Registrar</a>
-                        <a class="collapse-item" href="">Consultar</a>
+                        <a class="collapse-item" href="{{ url('/registrar-cargo') }}">Registrar</a>
+                        <a class="collapse-item" href="{{ url('/cargos') }}">Consultar</a>
                     </div>
                 </div>
             </li>
@@ -120,8 +120,8 @@
                 <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Opciones de Personas:</h6>
-                        <a class="collapse-item" href="">Registrar</a>
-                        <a class="collapse-item" href="">Consultar</a>
+                        <a class="collapse-item" href="{{ url('/registrar-persona') }}">Registrar</a>
+                        <a class="collapse-item" href="{{ url('/personas') }}">Consultar</a>
                     </div>
                 </div>
             </li>
@@ -135,8 +135,8 @@
                 <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Opciones de Eventos:</h6>
-                        <a class="collapse-item" href="">Registrar</a>
-                        <a class="collapse-item" href="">Consultar</a>
+                        <a class="collapse-item" href="{{ url('/registrar-evento') }}">Registrar</a>
+                        <a class="collapse-item" href="{{ url('/eventos') }}">Consultar</a>
                     </div>
                 </div>
             </li>
